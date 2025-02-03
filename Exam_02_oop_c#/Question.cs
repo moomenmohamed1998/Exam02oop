@@ -8,21 +8,24 @@ namespace Exam_02_oop_c_
 {
     internal class Question
     {
-        //----------------------------------------
-        public Answer[] Answers { get; set; }
-        public Answer RightAnswer { get; set; }
-        //----------------------------------------
         public string Header { get; set; }
         public string Body { get; set; }
         public int Mark { get; set; }
 
-
-        public Question(string header, string body, int mark)
+        //----------------------------------------
+        public Answer[] Answers { get; set; }
+        public Answer[] RightAnswer { get; set; }
+        //----------------------------------------
+        public Question(string header, string body, int mark, Answer[] answers, Answer[] rightAnswer)
         {
             Header = header;
             Body = body;
             Mark = mark;
+            Answers = answers;
+            RightAnswer = rightAnswer;
         }
+
+      
 
 
     }

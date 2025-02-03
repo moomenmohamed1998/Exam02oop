@@ -5,8 +5,18 @@
         static void Main(string[] args)
         {
 
-            Subject Subject = new Subject(1, "C");
-            Subject.CreateExam();
+            #region/Start Exam
+
+            Console.WriteLine("Do you want to start the exam now? =====> ( Y , N )");
+
+            if (char.Parse(Console.ReadLine()) == 'y')
+            {
+                Console.Clear();
+                Subject Subject = new Subject(1, "C");
+                Subject.CreateExam();
+            }
+            #endregion
+
 
 
         }
