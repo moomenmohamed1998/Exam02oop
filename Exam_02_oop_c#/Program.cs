@@ -5,9 +5,10 @@
         static void Main(string[] args)
         {
 
-            Subject sub1 = new Subject(1, "C#");
-            sub1.CreateExam();
-            Console.Clear();
+            Subject Subject = new Subject(1, "C");
+            Subject.CreateExam();
+
+
         }
     }
 }
