@@ -12,6 +12,7 @@
             if (char.Parse(Console.ReadLine()) == 'y')
             {
                 Console.Clear();
+
                 Subject Subject = new Subject(1, "C");
                 Subject.CreateExam();
             }
